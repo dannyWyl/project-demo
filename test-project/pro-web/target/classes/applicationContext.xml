@@ -14,6 +14,7 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.spri
 	<!--数据库配置  采用一种方式就可以（先采用druid方式）-->
 	<!--druid方式配置数据库-->
 	<import resource="classpath:xml/spring-druid.xml"/>
+
 	<!--c3p0方式配置数据库-->
 	<!--<import resource="classpath:xml/spring-c3p0.xml"/>-->
 

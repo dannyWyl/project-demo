@@ -46,7 +46,7 @@
         <property name="dataSource" ref="dataSource" />
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
         <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
-        <property name="mapperLocations" value="classpath*:sqlmap/com/wyl/self/mapper/*.xml" />
+        <property name="mapperLocations" value="classpath*:sqlmap/com/**/mapper/*.xml" />
     </bean>
 
     <!-- 三、创建mybatis会话template -->
