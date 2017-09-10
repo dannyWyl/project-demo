@@ -17,17 +17,14 @@ import java.util.Map;
 public class Test implements com.wyl.self.service.Test {
 
 
-    @Autowired
-    private MyUserMapper myUserMapper;
+//    @Autowired
+//    private MyUserMapper myUserMapper;
 
     @Override
     public String test(String name) throws Exception {
+//        List<Map<String, String>> list=myUserMapper.query();
 
-
-
-        List<Map<String, String>> list=myUserMapper.query();
-
-        System.out.println(JSONObject.toJSONString(list) +"****************************");
-        return JSONObject.toJSONString(list);
+        System.out.println(name+"++++++++++++++++++++++++++++++++++++++++++++++++++");
+        return null;
     }
 }
