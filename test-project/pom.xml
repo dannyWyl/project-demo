@@ -13,6 +13,8 @@
         <module>pro-web</module>
         <module>pro-service</module>
         <module>common-lib</module>
+        <module>pro-slc</module>
+        <module>pro-ice</module>
     </modules>
 
     <profiles>
@@ -41,7 +43,7 @@
         <!--jdk版本-->
         <maven.compiler.version>1.8</maven.compiler.version>
         <!--junit 版本-->
-        <junit.version>3.8.1</junit.version>
+        <junit.version>4.12</junit.version>
         <!--servlet-api 版本-->
         <servlet.version>3.1.0</servlet.version>
         <!--servlet.jsp 版本-->
@@ -69,6 +71,8 @@
         <logback.version>1.1.3</logback.version>
         <!--commons.log 版本-->
         <commons.log.version>1.1.3</commons.log.version>
+        <!--ice 版本-->
+        <ice.version>3.7.0</ice.version>
     </properties>
 
     <dependencies>
@@ -182,6 +186,12 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
                 <version>${servlet.version}</version>
@@ -197,6 +207,18 @@
                 <groupId>com.test.project</groupId>
                 <artifactId>pro-service</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.test.project</groupId>
+                <artifactId>pro-slc</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.zeroc</groupId>
+                <artifactId>ice</artifactId>
+                <version>${ice.version}</version>
             </dependency>
 
             <!--公共模块-->
