@@ -14,7 +14,7 @@ public class PrintClientTest {
             if (printer == null) {
                 throw new Error("Invalid proxy");
             }
-            String yxw = printer.sayHello("yxw");
+            String yxw = printer.sayHello("王钢印");
             System.out.println("返回信息 -> " + yxw);
         }
     }

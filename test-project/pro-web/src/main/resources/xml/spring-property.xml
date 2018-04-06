@@ -8,6 +8,7 @@
 
 	<!--多个就配置多个-->
 	<context:property-placeholder location="classpath:property/proJdbc.properties" ignore-unresolvable="true"/>
+	<context:property-placeholder location="classpath:property/zookepeer.properties" ignore-unresolvable="true"/>
 
 	<!-- 配置应用系统的常量（多个逗号隔开）-->
 	<bean name="constants" class="com.wyl.self.util.Constants">

@@ -15,6 +15,7 @@
         <module>common-lib</module>
         <module>pro-slc</module>
         <module>pro-ice</module>
+        <module>pro_lend</module>
     </modules>
 
     <profiles>
@@ -73,6 +74,8 @@
         <commons.log.version>1.1.3</commons.log.version>
         <!--ice 版本-->
         <ice.version>3.7.0</ice.version>
+        <!--elastic 版本-->
+        <elastic-job.version>3.0.0-SNAPSHOT</elastic-job.version>
     </properties>
 
     <dependencies>
@@ -262,6 +265,11 @@
             </dependency>
             <!--druid******************结束-->
 
+            <dependency>
+                <groupId>io.elasticjob</groupId>
+                <artifactId>elastic-job-lite-spring</artifactId>
+                <version>${elastic-job.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -276,12 +284,12 @@
                 </configuration>
             </plugin>
             <!--<plugin>-->
-                <!--<artifactId>maven-war-plugin</artifactId>-->
-                <!--<version>2.4</version>-->
-                <!--<configuration>-->
-                    <!--<warSourceDirectory>WebContent</warSourceDirectory>-->
-                    <!--<failOnMissingWebXml>false</failOnMissingWebXml>-->
-                <!--</configuration>-->
+            <!--<artifactId>maven-war-plugin</artifactId>-->
+            <!--<version>2.4</version>-->
+            <!--<configuration>-->
+            <!--<warSourceDirectory>WebContent</warSourceDirectory>-->
+            <!--<failOnMissingWebXml>false</failOnMissingWebXml>-->
+            <!--</configuration>-->
             <!--</plugin>-->
         </plugins>
     </build>
