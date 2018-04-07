@@ -7,15 +7,15 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.spri
 
 	<!--配置常量管理-->
 	<import resource="classpath:xml/spring-property.xml"/>
-
 	<!--spring-mvc 配置-->
 	<import resource="classpath:xml/spring-mvc.xml"/>
-
 	<!--数据库配置  采用一种方式就可以（先采用druid方式）-->
 	<!--druid方式配置数据库-->
 	<import resource="classpath:xml/spring-druid.xml"/>
 	<!--定时任务-->
 	<import resource="classpath:xml/spring-task.xml"/>
+	<!--redis-->
+	<import resource="classpath:xml/spring-redis.xml"/>
 
 	<!--c3p0方式配置数据库-->
 	<!--<import resource="classpath:xml/spring-c3p0.xml"/>-->

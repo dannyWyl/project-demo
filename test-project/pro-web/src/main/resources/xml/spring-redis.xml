@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="redisClusterUtil" class="com.framework.redis.util.RedisClusterUtil">
+		<constructor-arg>
+			<bean class="com.framework.redis.util.RedisConfiguration">
+				<property name="localPropertiesPath" value="property/redis-config.properties" />
+			</bean>
+		</constructor-arg>
+	</bean>
+</beans>

@@ -51,5 +51,11 @@
             <groupId>io.elasticjob</groupId>
             <artifactId>elastic-job-lite-spring</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.framework.system</groupId>
+            <artifactId>framework-redis</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
